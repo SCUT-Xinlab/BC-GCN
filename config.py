@@ -1,0 +1,13 @@
+modelname = 'BC_GCN_SE'
+cuda = '0'
+scale = 40
+lamda = 1/2
+SE = 4
+vanee = 517
+yeo = 34
+fs = 70
+mmp = 360
+harvard = 112
+fcp = 200
+node = harvard
+atlas = 'harvard'
