@@ -229,7 +229,7 @@ class BC_GCN_SE(nn.Module):
 def weights_init(m):
 	if isinstance(m, nn.Conv2d):
 		#nn.init.kaiming_normal_(m.weight, mode='fan_out')
-		nn.init.xavier_uniform_(m.weight)
+		#nn.init.xavier_uniform_(m.weight)
 		nn.init.constant_(m.bias, 0)
 	elif isinstance(m, nn.Linear):
 		nn.init.xavier_uniform_(m.weight)
