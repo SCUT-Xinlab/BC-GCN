@@ -14,7 +14,7 @@ class GPC(nn.Module):
 		super(GPC, self).__init__()
 		self.out_dim = out_dim
 		self.conv = nn.Conv2d(in_dim, out_dim, (1, node))
-		nn.init.normal_(self.conv.weight, std=math.sqrt(2*(1-lamda)/(node*in_dim+node*out_dim)))
+		nn.init.normal_(self.conv.weight, std=math.sqrt(2/(node*in_dim+node*out_dim)))
 
 	def forward(self, x):
 		batchsize = x.shape[0]
