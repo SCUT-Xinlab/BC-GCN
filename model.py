@@ -123,6 +123,7 @@ class BC_GCN(nn.Module):
 		self.NP = NP(EP_dim, NP_dim)
 
 		self.fc = nn.Linear(NP_dim, 1)
+		nn.init.constant_(self.fc.bias, 0)
 
 	def forward(self, x):
 
@@ -162,6 +163,7 @@ class BC_GCN_Res(nn.Module):
 		self.NP = NP(EP_dim, NP_dim)
 
 		self.fc = nn.Linear(NP_dim, 1)
+		nn.init.constant_(self.fc.bias, 0)
 
 	def forward(self, x):
 
@@ -201,6 +203,7 @@ class BC_GCN_SE(nn.Module):
 		self.NP = NP(EP_dim, NP_dim)
 
 		self.fc = nn.Linear(NP_dim, 1)
+		nn.init.constant_(self.fc.bias, 0)
 
 	def forward(self, x):
 
